@@ -290,6 +290,7 @@
   margin-right: 17px;
 }
 .area__like {
+  flex-wrap: wrap;
   padding: 0 16px 13px 16px;
   display: flex;
   align-items: center;
