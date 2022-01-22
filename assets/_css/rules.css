@@ -1,6 +1,9 @@
 .disabled {
   display: none;
 }
+.enabled {
+  display: block;
+}
 .button {
   border: 0;
   background: 0;
