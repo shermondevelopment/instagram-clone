@@ -25,10 +25,6 @@ const onClick = () => {
   
 }
 
-const distanceFromTheList = (element) => {
- console.log(element.offsetLeft, element.offsetTop, element.pageYOffset)
-}
-
 const scrollingRight = () => {
   let x = 0;
   arrow.addEventListener('click', (event) => {
