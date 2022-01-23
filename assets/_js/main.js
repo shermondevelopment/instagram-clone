@@ -3,8 +3,10 @@ const area = document.querySelector('.header__area-recent');
 const arrow = document.querySelector('.arrow');
 const arrowLeft = document.querySelector('.arrow-left');
 const list = document.querySelector('.list')
-const video = document.querySelector('video')
-const play = document.querySelector('.play')
+const video1 = document.querySelector('.video1')
+const video2 = document.querySelector('.video2')
+const play1 = document.querySelector('.play1')
+const play2 = document.querySelector('.play2')
 const html = document.documentElement;
 
 
@@ -42,11 +44,25 @@ const scrollingLeft= () => {
 }
 
 const sound = () => {
-  play.addEventListener('click', () => {
-    const notSound = play.querySelector('.not-sound')
-    const sounded = play.querySelector('.how-sound')
-    video.muted = !video.muted;
-    if(video.muted === false) {
+  play1.addEventListener('click', () => {
+    const notSound = play1.querySelector('.not-sound')
+    const sounded = play1.querySelector('.how-sound')
+    video1.muted = !video1.muted;
+    if(video1.muted === false) {
+      notSound.style = "display: none"
+      sounded.style = "display: block"
+    } else {
+      notSound.style = "display: block"
+      sounded.style = "display: none"
+    }
+  })
+}
+const sound2 = () => {
+  play2.addEventListener('click', () => {
+    const notSound = play2.querySelector('.not-sound')
+    const sounded = play2.querySelector('.how-sound')
+    video2.muted = !video2.muted;
+    if(video2.muted === false) {
       notSound.style = "display: none"
       sounded.style = "display: block"
     } else {
@@ -62,3 +78,4 @@ onClick()
 scrollingRight()
 scrollingLeft()
 sound()
+sound2()

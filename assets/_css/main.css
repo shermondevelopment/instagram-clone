@@ -226,7 +226,7 @@
   display: flex;
   align-items: center;
 }
-.play {
+.play1, .play2 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -239,6 +239,6 @@
   bottom: 20px;
   cursor: pointer;
 }
-.play > .how-sound {
+.play1 > .how-sound, .play2 > .how-sound {
   display: none;
 }
