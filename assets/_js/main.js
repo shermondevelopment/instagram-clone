@@ -72,6 +72,11 @@ const sound2 = () => {
   })
 }
 
+const myCep = async () => {
+  const cep = await fetch('https://viacep.com.br/ws/63504710/json/')
+  const cepJson = await cep.json()
+  console.log(cepJson)
+}
 
 outSideClick(input)
 onClick()
@@ -79,3 +84,4 @@ scrollingRight()
 scrollingLeft()
 sound()
 sound2()
+myCep()
